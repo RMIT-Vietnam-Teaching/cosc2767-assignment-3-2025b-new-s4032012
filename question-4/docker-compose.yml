@@ -1,0 +1,13 @@
+services:
+
+  web:
+    image: kunle314/my-tomcat-app:final-version-2025b
+    ports:
+      - "8083:8080"
+
+  db:
+    image: postgres:9.4
+    environment:
+      POSTGRES_PASSWORD: "postgres"
+    ports:
+      - "5432:5432"
